@@ -1,0 +1,9 @@
+<view class="container">
+  <!-- 人物图片 -->
+  <image 
+    src="{{currentImg}}" 
+    class="player" 
+    bindtap="onHit"
+    animation="{{animationData}}"
+  ></image>
+</view>

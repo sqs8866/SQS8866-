@@ -1,0 +1,49 @@
+<!-- pages/image-cropper/image-cropper.wxml -->
+<view class="container">
+  <view class="title">图片区域选择器</view>
+
+  <!-- 预览区域 -->
+  <view class="preview-section">
+    <canvas
+      id="previewCanvas"
+      type="2d"
+      class="preview-canvas"
+      style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;"
+      bindtouchstart="touchStart"
+      bindtouchmove="touchMove"
+      bindtouchend="touchEnd"
+    ></canvas>
+  </view>
+
+  <!-- 控制区域 -->
+  <view class="control-section">
+
+    <!-- 操作按钮 -->
+    <view class="button-group">
+      <button class="btn primary" bindtap="chooseImage">选择图片</button>
+      <button
+        class="btn success"
+        bindtap="exportSelectedArea"
+        disabled="{{!selectedImage}}"
+      >
+        导出选中区域
+      </button>
+    </view>
+
+    <!-- 使用说明 -->
+    <view class="instructions">
+      <text class="instruction-title">使用说明：</text>
+      <text class="instruction">• 点击"选择图片"按钮选择图片</text>
+      <text class="instruction">• <text class="highlight">拖动蓝色圆点</text>调整选择位置</text>
+      <text class="instruction">• <text class="highlight">拖动红色圆点</text>调整选择大小</text>
+      <text class="instruction">• 点击"导出选中区域"生成圆形图片</text>
+    </view>
+  </view>
+
+  <!-- 隐藏的导出canvas -->
+  <canvas
+    id="exportCanvas"
+    type="2d"
+    style="position: absolute; left: -9999px;"
+  ></canvas>
+</view>

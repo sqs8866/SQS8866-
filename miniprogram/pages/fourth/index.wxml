@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="btnContainer">
+    <button class="btnClass" plain size="mini" bind:tap="saveImage" style="color: {{brushColor}};">保存图片</button>
+    <button class="btnClass" plain size="mini" bind:tap="clearCanvas" style="color: {{brushColor}}">清空画布</button>
+    <button class="btnClass" plain size="mini" bind:tap="undo" style="color: {{brushColor}}">撤销</button>
+    <button class="btnClass" plain size="mini" bind:tap="onColorSelect" style="color: {{brushColor}};margin-right: 5px;">选择颜色</button>
+  </view>
+  <view class="section">
+    画笔粗细
+    <slider bindchange="sliderChange" min="1" max="20" show-value style="width:250px" />
+  </view>
+  <canvas
+    id="myCanvas"
+    type="2d"
+    style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;"
+    bindtouchstart="touchStart"
+    bindtouchmove="touchMove"
+    bindtouchend="touchEnd"
+  ></canvas>
+</view>

@@ -1,0 +1,79 @@
+/* WXSS */
+.palette-picker {
+  margin: 20rpx 0;
+}
+
+.section-title {
+  display: block;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.current-color-preview {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+  padding: 20rpx;
+  background: #f8f8f8;
+  border-radius: 15rpx;
+}
+
+.color-display {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #ddd;
+  margin-right: 30rpx;
+}
+
+.color-value {
+  font-size: 28rpx;
+  color: #666;
+  font-family: monospace;
+}
+
+.palette-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+  padding: 20rpx;
+  background: #f8f8f8;
+  border-radius: 15rpx;
+  max-height: 400rpx;
+  overflow-y: auto;
+}
+
+.palette-color {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 8rpx;
+  border: 2rpx solid transparent;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.palette-color.active {
+  border-color: #007AFF;
+  transform: scale(1.15);
+  box-shadow: 0 4rpx 8rpx rgba(0,0,0,0.2);
+}
+
+.color-tooltip {
+  font-size: 20rpx;
+  color: #fff;
+  text-shadow: 1rpx 1rpx 2rpx rgba(0,0,0,0.7);
+  font-weight: bold;
+}
+
+/* 为浅色背景调整工具提示颜色 */
+.palette-color[style*="#ffffff"] .color-tooltip,
+.palette-color[style*="#ffff00"] .color-tooltip,
+.palette-color[style*="#ffff33"] .color-tooltip {
+  color: #333;
+  text-shadow: 1rpx 1rpx 2rpx rgba(255,255,255,0.7);
+}

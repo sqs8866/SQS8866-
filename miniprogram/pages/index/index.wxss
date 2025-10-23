@@ -1,0 +1,8 @@
+.btnStyle {
+  margin-top: 30px;
+  width: 90% !important;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

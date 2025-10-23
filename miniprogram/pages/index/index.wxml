@@ -1,0 +1,6 @@
+<view>
+  <button type="primary" bindtap="gotoSecond" class="btnStyle">全屏烟花</button>
+  <button type="primary" bindtap="gotoThird" class="btnStyle">暴揍</button>
+  <button type="primary" bindtap="gotoFourth" class="btnStyle">在线涂鸦</button>
+  <button type="primary" bindtap="gotoFifth" class="btnStyle">图片方到圆</button>
+</view>

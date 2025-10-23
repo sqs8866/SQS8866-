@@ -1,0 +1,12 @@
+<!-- pages/fireworks/fireworks.wxml -->
+<view class="fullscreen-container">
+  <!-- 全屏Canvas -->
+  <canvas 
+    id="fireworksCanvas"
+    type="2d"
+    class="fireworks-canvas"
+    style="width: {{screenWidth}}px; height: {{screenHeight}}px;"
+    bindtouchstart="onCanvasTap"
+  ></canvas>
+ 
+</view>

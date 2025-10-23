@@ -1,0 +1,14 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.player {
+  width: 200rpx;
+  height: 300rpx;
+  /* 点击反馈区域可以更大 */
+}

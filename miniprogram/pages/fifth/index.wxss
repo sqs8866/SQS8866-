@@ -1,0 +1,123 @@
+/* pages/image-cropper/image-cropper.wxss */
+.container {
+  padding: 30rpx;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.title {
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40rpx;
+  text-shadow: 0 2rpx 10rpx rgba(0,0,0,0.3);
+}
+
+.preview-section {
+  background: white;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 8rpx 30rpx rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.preview-canvas {
+  border: 2rpx solid #e0e0e0;
+  border-radius: 10rpx;
+  box-shadow: 0 4rpx 15rpx rgba(0,0,0,0.1);
+}
+
+.control-section {
+  background: white;
+  border-radius: 20rpx;
+  padding: 40rpx 30rpx;
+  box-shadow: 0 8rpx 30rpx rgba(0,0,0,0.2);
+}
+
+.status-info {
+  background: #f8f8f8;
+  padding: 25rpx;
+  border-radius: 15rpx;
+  margin-bottom: 30rpx;
+}
+
+.status-item {
+  display: block;
+  font-size: 26rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+  font-family: monospace;
+}
+
+.status-item:last-child {
+  margin-bottom: 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 40rpx;
+}
+
+.btn {
+  flex: 1;
+  font-size: 28rpx;
+  padding: 25rpx;
+  border: none;
+  border-radius: 15rpx;
+  transition: all 0.3s;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #007AFF, #0056CC);
+  color: white;
+}
+
+.btn.success {
+  background: linear-gradient(135deg, #07C160, #059C4A);
+  color: white;
+}
+
+.btn:disabled {
+  background: #e0e0e0;
+  color: #999;
+  transform: none;
+}
+
+.btn:active {
+  transform: translateY(2rpx);
+}
+
+.instructions {
+  background: #f8f8f8;
+  padding: 30rpx;
+  border-radius: 15rpx;
+}
+
+.instruction-title {
+  display: block;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.instruction {
+  display: block;
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 12rpx;
+  line-height: 1.5;
+}
+
+.instruction:last-child {
+  margin-bottom: 0;
+}
+
+.highlight {
+  color: #007AFF;
+  font-weight: bold;
+}

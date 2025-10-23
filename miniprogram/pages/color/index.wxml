@@ -1,0 +1,24 @@
+<!-- WXML -->
+<view class="palette-picker">
+  <text class="section-title">调色板</text>
+  
+  <!-- 当前颜色预览 -->
+  <view class="current-color-preview">
+    <view class="color-display" style="background-color: {{brushColor}};"></view>
+    <text class="color-value">{{brushColor}}</text>
+  </view>
+  
+  <!-- 调色板网格 -->
+  <view class="palette-grid">
+    <view 
+      class="palette-color {{brushColor === color ? 'active' : ''}}"
+      wx:for="{{colorPalette}}"
+      wx:key="*this"
+      style="background-color: {{item}};"
+      data-color="{{item}}"
+      bindtap="onPaletteSelect"
+    >
+      <text class="color-tooltip" wx:if="{{brushColor === item}}">✓</text>
+    </view>
+  </view>
+</view>
