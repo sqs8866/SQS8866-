@@ -20,7 +20,6 @@ Page({
       complementary: [[r, g, b], compRgb]
     });
 
-    console.log(this.data.complementary)
   },
 
   onRedChange(e) { this.setData({ r: e.detail.value }); this.updateScheme(); },

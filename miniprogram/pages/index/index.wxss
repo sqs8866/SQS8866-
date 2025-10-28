@@ -1,8 +1,41 @@
-.btnStyle {
-  margin-top: 30px;
-  width: 90% !important;
-  height: 50px;
+.container {
+  width:100vw;
+  height:100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+
+  background: linear-gradient(135deg, #e6f7ff, #ccf5e8); /* 渐变背景，从浅蓝到浅绿 */
+}
+.fresh-btn {
+  margin-top: 30px;
+  width: 250px !important;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* 使用深色文字以确保对比度 */
+  background-color: #ccf5e8; /* 浅绿色背景，传递出清新的感觉 */
+  border: none;
+  border-radius: 25px; /* 圆润的边角让按钮看起来更加友好 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 轻柔的阴影增加立体感 */
+  transition: all 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.fresh-btn:first-of-type {
+  margin-top: 120px;
+}
+
+/* 鼠标悬停时改变颜色和阴影，增强交互性 */
+.fresh-btn:hover {
+  background-color: #a5d6a7; /* 悬停时稍暗一点的绿色，但依然保持清新 */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 点击时的效果，模拟按下按钮的感觉 */
+.fresh-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
