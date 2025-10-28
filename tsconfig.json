@@ -23,7 +23,7 @@
   },
   "include": [
     "./**/*.ts"
-, "miniprogram/pages/third/index.js"  ],
+, "miniprogram/pages/third/index.js", "miniprogram/pages/seventh/colorUtils.js"  ],
   "exclude": [
     "node_modules"
   ]

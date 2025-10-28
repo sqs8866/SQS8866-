@@ -39,4 +39,9 @@ Page({
       url: '../sixth/index',
     })
   },
+  gotoSeventh(){
+    wx.navigateTo({
+      url: '../seventh/index',
+    })
+  },
 });

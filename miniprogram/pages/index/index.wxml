@@ -3,4 +3,6 @@
   <button type="primary" bindtap="gotoThird" class="btnStyle">暴揍</button>
   <button type="primary" bindtap="gotoFourth" class="btnStyle">在线涂鸦</button>
   <button type="primary" bindtap="gotoFifth" class="btnStyle">图片方到圆</button>
+  <button type="primary" bindtap="gotoSixth" class="btnStyle">调色板</button>
+  <button type="primary" bindtap="gotoSeventh" class="btnStyle">配送生成器</button>
 </view>

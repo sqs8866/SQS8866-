@@ -1,8 +1,6 @@
 <view class="container">
-  <!-- 颜色预览区 -->
-  <view class="color-preview" style="background-color: rgb({{r}}, {{g}}, {{b}});">
-    <text class="color-text">RGB({{r}}, {{g}}, {{b}})</text>
-    <text class="color-text">#{{hex}}</text>
+  <text>选择主色：</text>
+  <view class="color-box" style="background-color: rgb({{r}},{{g}},{{b}})">
   </view>
   <!-- 滑块控制区 -->
   <view class="slider-group">
@@ -20,9 +18,11 @@
     <slider min="0" max="255" value="{{b}}" show-value bindchange="onBlueChange">
     </slider>
   </view>
-  <view class="btn-bg">
-    <button type="primary" bindtap="copyColor">复制</button>
-    <button type="primary" bindtap="resetColor" style="margin-left: 20px;">重置</button>
-  </view>
+  <view class="color-preview" style="background-color: rgb({{r}},{{g}},{{b}});"></view>
 
+  <view class="scheme">
+    <text>互补色方案：</text>
+    <view class="color-box" wx:for="{{complementary}}" wx:key="index"
+      style="background-color: rgb({{item[0]}},{{item[1]}},{{item[2]}});"></view>
+  </view>
 </view>

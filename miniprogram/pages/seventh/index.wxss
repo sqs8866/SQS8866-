@@ -1,0 +1,15 @@
+
+.slider-group {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.color-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.color-box {
+  width: 200px;
+  height: 80px;
+}

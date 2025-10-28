@@ -6,7 +6,8 @@
     "pages/fourth/index",
     "pages/color/index",
     "pages/fifth/index",
-    "pages/sixth/index"
+    "pages/sixth/index",
+    "pages/seventh/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
